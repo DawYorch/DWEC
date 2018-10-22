@@ -1,0 +1,73 @@
+
+Skip to content
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @DawYorch
+
+1
+0
+
+    0
+
+manugarmor/DIW
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+DIW/4cuadros/4cuadros.html
+b6ee20a 2 minutes ago
+@manugarmor manugarmor Add files via upload
+32 lines (29 sloc) 1.28 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	
+</head>
+<body> 
+	<script src="4cuadros.js"></script>   
+    <div id="principal">
+		<div id="uno" onclick="sinSombra1()" ondblclick="sombraInterna(this)" onmouseover="circulo(this)" onmouseout="cuadrado(this)">		
+		</div>
+		<div id="dos" onclick="sinSombra2()" ondblclick="sombraInterna(this)" onmouseover="circulo(this)" onmouseout="cuadrado(this)">
+		</div>
+		<div id="tres" onclick="sinSombra3()" ondblclick="sombraInterna(this)" onmouseover="circulo(this)" onmouseout="cuadrado(this)">
+		</div>
+		<div id="cuatro" onclick="sinSombra4()" ondblclick="sombraInterna(this)" onmouseover="circulo(this)" onmouseout="cuadrado(this)">
+		</div>				
+    </div>
+	<div id="secundario">
+		<button id="botonUno" onclick="borrar1()">Caja Roja</button>		
+		<button id="botonDos" onclick="borrar2()">Caja Azul</button>
+		<button id="botonTres" onclick="borrar3()">Caja Verde</button>
+		<button id="botonCuatro" onclick="borrar4()">Caja Negra</button>		
+	</div>
+		
+</body>
+</html>
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Press h to open a hovercard with more details.

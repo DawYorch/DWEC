@@ -1,5 +1,6 @@
     
     
+<<<<<<< HEAD
 window.onload = function Escribe() {
 
                 document.getElementById('button01').onclick = mostrar;
@@ -26,3 +27,17 @@ window.onload = function Escribe() {
 
     
     
+=======
+window.onload = function() {
+
+                document.getElementById('button01').onclick = mostrar;
+            }
+
+
+function mostrar(){
+
+alert("It's Alive");
+
+
+    }        
+>>>>>>> b383ab6f919d6018ed206edb12dc3c59b13ce637

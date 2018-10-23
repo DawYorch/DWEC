@@ -1,0 +1,26 @@
+#caja1{
+
+    height: 200px;
+    width: 250px;
+    background-color: red;
+    margin: 0 auto;
+   
+}
+
+h1{
+
+    text-align: center;
+
+
+}
+
+#caja2{
+
+    height: 200px;
+    width: 250px;
+    background-color: blue;
+    margin: 0 auto;
+    
+
+
+}

@@ -1,0 +1,65 @@
+._1{
+
+  height: 100px;
+  width: 100px;
+
+}
+
+
+
+._2{
+   
+transform: rotate(90deg);
+
+}
+
+._3{
+   
+    transform: rotate(180deg);
+    
+}
+
+._4{
+   
+    transform: rotate(270deg);
+    
+    }
+
+.A, .B, .C, .D {
+
+    height: 50%;
+    width: 50%;
+
+}
+
+.A {
+
+    background-color: brown;
+}
+
+.B{
+
+    background-color: coral;
+}
+
+.C{
+
+    background-color: cornflowerblue;
+}
+
+.D{
+
+    background-color: darkkhaki;
+}
+
+.A, .C{
+
+float:left;
+
+}
+
+.B, .D{
+
+float:right;
+
+}

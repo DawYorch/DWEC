@@ -56,20 +56,19 @@ function Eliminar02(elemento){
 		
 }
 
-
-
 function nuevaFila(){
-	
-	var blok = document.getElementById("bloque");
+    
+    contador++;
 
+    var blok = document.getElementById("bloque");
+    
+///////////////////////////////////////////////////////// 
 
-
-    //FILA
     var renglonex = document.createElement("div");
     renglonex.classList.add("form-inline");
 
-    //DNI
-    contador++;
+///////////////////////////////////////////////////////// 
+
     var dni= document.createElement("div");
     var texDni = document.createTextNode("DNI");
     var inDni = document.createElement("input");
@@ -80,14 +79,16 @@ function nuevaFila(){
 	inDni.disabled = true;
     inDni.classList.add("form-control");
 
-    //NOMBRE
+/////////////////////////////////////////////////////////
+
     var nombre = document.createElement("div");
     var texNom = document.createTextNode("Nombre");
     var inNom = document.createElement("input");
 	inNom.setAttribute("id", "inN"+contador);
     inNom.disabled = true;
     inNom.classList.add("form-control");
-    //APELLIDOS
+
+////////////////////////////////////////////////////////
 
     var apellidos = document.createElement("div");
     var texApel = document.createTextNode("Apellidos");
@@ -96,65 +97,42 @@ function nuevaFila(){
     inApel.disabled = true;
     inApel.classList.add("form-control");
 
-
-
-    //BORRAR
+////////////////////////////////////////////////////////
 
     var eliminar = document.createElement("button");
 	eliminar.addEventListener("click",Eliminar01);
 	eliminar.setAttribute("id", "eli");
-	var texEli = document.createTextNode("X");
-    
+	var texEli = document.createTextNode("X");   
     eliminar.classList.add("btn-danger");
-	eliminar.classList.add("eliminar");
-
-    //EDITAR
-
+    eliminar.classList.add("eliminar");
+    
+////////////////////////////////////////////////////////
 
     var editar = document.createElement("button");
 	editar.addEventListener("click", Rellenar);
 	editar.setAttribute("id", "edi");
-	var texEdi = document.createTextNode("Abc");
-    
+	var texEdi = document.createTextNode("Abc");   
     editar.classList.add("btn-success");
-	eliminar.classList.add("editar");
-	
+    eliminar.classList.add("editar");
+    
+///////////////////////////////////////////////////////
 
-
-    //FILA
-	
     blok.appendChild(renglonex);  //Crea un div dentro de "bloque2 donde insertar lo siguiente
-
-    //DNI
-		
+	
     dni.appendChild(texDni);   //dni crea un div .appenchild(textDni) introduce dentro el texto
     dni.appendChild(inDni);
-	//
     renglonex.appendChild(dni);
-	
-    
-    //NOMBRE
-	
+
     nombre.appendChild(texNom);
-    nombre.appendChild(inNom);
-	
+    nombre.appendChild(inNom);	
     renglonex.appendChild(nombre);
-	
 
-
-    //APELLIDOS
-	
     apellidos.appendChild(texApel);
     apellidos.appendChild(inApel);
     renglonex.appendChild(apellidos);
 
-
-    //BORRAR
-
 	eliminar.appendChild(texEli);
 	renglonex.appendChild(eliminar);
-
-    //EDITAR
 
 	editar.appendChild(texEdi);
 	renglonex.appendChild(editar);

@@ -1,0 +1,49 @@
+.centro{
+
+    position:absolute;
+    height: 425px;
+    width: 800px;
+    background-color: antiquewhite;
+    border: solid lightgrey 2px;
+    border-radius:12px;
+    margin-left:10%;
+
+}
+
+#proyector{
+
+    position:relative;
+    left:13%;
+    top:1.7%;
+}
+
+.botonera{
+
+    width:600px;
+    background-color: coral;
+    border-radius:7px;
+    position:relative;
+    left:13%;
+    top:8px;
+
+}
+
+#play{
+
+    /* Si le pongo un color de
+    fondo se cambian las dimensiones 
+    del boton */
+
+}
+
+#imgPlay, #imgAvanz, #imgRetro{
+
+    margin-top: 4px;
+
+}
+
+#play, #avanz, #retro{
+
+    width:80px;
+
+}

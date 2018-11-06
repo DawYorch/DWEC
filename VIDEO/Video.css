@@ -28,6 +28,11 @@
 
 }
 
+#imgAvanz{
+
+    transform: scaleX(-1);
+}
+
 #play{
 
     /* Si le pongo un color de
@@ -36,9 +41,15 @@
 
 }
 
-#imgPlay, #imgAvanz, #imgRetro{
+#imgPlay, #imgAvanz, #imgRetro, #imgVol, #imgMute{
 
     margin-top: 4px;
+
+}
+#imgMute{
+
+    position:relative;
+    left:4px;
 
 }
 

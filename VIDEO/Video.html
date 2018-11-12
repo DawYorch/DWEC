@@ -9,63 +9,83 @@
     <script src="Video.js"></script>
 </head>
 <body>
-        <div class="fondo">
-
-                <div class="banner">
-
-                Esto es un anuncio
-
-                </div>
-
+        
 
             <div class="centro">
+			
+					
+			
 
                     <video width="600" id="proyector">
-                            <source src="Manramp.mp4" type="video/mp4">
+                            <source src="Manramp.mp4" type="video/mp4" id="peli">
                                                        
                     </video>
+					
+					<div class="barra">
+					
+						<progress id="progreso" min="0" max="100" value="0"></progress>
+					
+					</div>
 
                     <div class="botonera">
 
-                        <button type="button" id="play">
+									<button type="button" id="retro">
 
-                            <img src="rewind.png" width="30px" id="imgRetro">
+										<img src="rewind.png" width="30px" id="imgRetro">
 
-                        </button>
+									</button>
 
-                        
-                        
-                        <button type="button" id="avanz">
+									
+									
+									<button type="button" id="play">
 
-                                <img src="arrowButton.png" width="30px" id="imgPlay">
-    
-                        </button>   
-                        
-                        <button type="button" id="retro">
+											<img src="arrowButton.png" width="30px" id="imgPlay">
+				
+									</button>   
+									
+									<button type="button" id="avanz">
 
-                                <img src="rewind.png" width="30px" id="imgAvanz">
-    
-                        </button>
+											<img src="rewind.png" width="30px" id="imgAvanz">
+				
+									</button>
 
-                        
-                        <button type="button" id="volumen">
+									
+									<button type="button" id="reiniciar">
 
-                                <img src="Volume.png" width="30px" id="imgVol">
-    
-                        </button>
+											<img src="inicio.png" width="30px" id="imgIni">
+				
+									</button>
 
 
-                        <button type="button" id="mute">
+									<button type="button" id="mute">
 
-                                <img src="mute.png" width="30px" id="imgMute">
-    
-                        </button>
+											<img src="mute.png" width="30px" id="imgMute">
+				
+									</button>
+									
+									<button type="button" id="menos">
+
+											<img src="menos.png" width="30px" id="imgMenos">
+				
+									</button>
+									
+									<button type="button" id="mas">
+
+											<img src="mas.png" width="30px" id="imgMas">
+				
+									</button>
 
 
                     </div>
 
 
-
+					<div class="foPub" id="pub">
+					
+						<div class="publi">
+						<div id="cuenta"></div><img src="Chinpokomon.png"  id="chinpo"><img src="X.png"  id="equis">
+						</div>
+					
+					<div>
 
             </div>
 
@@ -77,6 +97,6 @@
 
 
 
-        </div>   
+         
 </body>
 </html>

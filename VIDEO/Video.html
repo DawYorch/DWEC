@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Video.css" />
-    <script src="Video.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="Video.css" />
+	<script src="Video.js"></script>
 </head>
+
 <body>
-        
-
-            <div class="centro">
-			
-					
-			
-
-                    <video width="600" id="proyector">
-                            <source src="Manramp.mp4" type="video/mp4" id="peli">
-                                                       
-                    </video>
-					
-					<div class="barra">
-					
-						<progress id="progreso" min="0" max="100" value="0"></progress>
-					
-					</div>
-
-                    <div class="botonera">
-
-									<button type="button" id="retro">
-
-										<img src="rewind.png" width="30px" id="imgRetro">
-
-									</button>
-
-									
-									
-									<button type="button" id="play">
-
-											<img src="arrowButton.png" width="30px" id="imgPlay">
-				
-									</button>   
-									
-									<button type="button" id="avanz">
-
-											<img src="rewind.png" width="30px" id="imgAvanz">
-				
-									</button>
-
-									
-									<button type="button" id="reiniciar">
-
-											<img src="inicio.png" width="30px" id="imgIni">
-				
-									</button>
 
 
-									<button type="button" id="mute">
-
-											<img src="mute.png" width="30px" id="imgMute">
-				
-									</button>
-									
-									<button type="button" id="menos">
-
-											<img src="menos.png" width="30px" id="imgMenos">
-				
-									</button>
-									
-									<button type="button" id="mas">
-
-											<img src="mas.png" width="30px" id="imgMas">
-				
-									</button>
-
-
-                    </div>
-
-
-					<div class="foPub" id="pub">
-					
-						<div class="publi">
-						<div id="cuenta"></div><img src="Chinpokomon.png"  id="chinpo"><img src="X.png"  id="equis">
-						</div>
-					
-					<div>
-
-            </div>
-
-            <div class="lateral">
+	<div class="centro">
 
 
 
-            </div>
+
+		<video width="600" id="proyector">
+			<source src="Manramp.mp4" type="video/mp4" id="peli">
+
+		</video>
+
+		<div class="barra">
+
+			<progress id="progreso" min="0" max="100" value="0"></progress>
+
+		</div>
+
+		<div class="botonera">
+
+
+				<div class="grupo_botones">
+
+							<button type="button" id="retro">
+
+								<img src="rewind.png"  id="imgRetro">
+
+							</button>
 
 
 
-         
+							<button type="button" id="play">
+
+								<img src="arrowButton.png" 
+								id="imgPlay">
+
+							</button>
+
+							<button type="button" id="avanz">
+
+								<img src="rewind.png" 
+								id="imgAvanz">
+
+							</button>
+
+
+							<button type="button" id="reiniciar">
+
+								<img src="inicio.png" 
+								id="imgIni">
+
+							</button>
+
+
+							<button type="button" id="mute">
+
+								<img src="mute.png" 
+								id="imgMute">
+
+							</button>
+
+							<button type="button" id="menos">
+
+								<img src="menos.png"  id="imgMenos">
+
+							</button>
+
+							<button type="button" id="mas">
+
+								<img src="mas.png" 
+								id="imgMas">
+
+							</button>
+
+				</div>			
+
+
+		</div>
+
+
+		<div class="foPub" id="pub">
+
+			<div class="publi">
+				<div id="cuenta"></div><img src="Chinpokomon.png" id="chinpo"><img src="X.png" id="equis">
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div id="lateral">
+
+		<video width="300" class="proyectorL">
+			<source src="Chiquito.mp4" type="video/mp4" id="peli2">
+
+		</video>
+		<br>
+
+		<video width="300" class="proyectorL">
+				<source src="Chiquito.mp4" type="video/mp4" id="peli3">
+	
+		</video>
+		<br>
+		
+		<video width="300" class="proyectorL">
+				<source src="Chiquito.mp4" type="video/mp4" id="peli4">
+	
+	    </video>		
+
+
+	</div>
+
+
+
+
 </body>
+
 </html>

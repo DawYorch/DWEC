@@ -5,7 +5,8 @@
     width: 800px;
     background-color: antiquewhite;
     border: solid lightgrey 2px;
-    border-radius:12px;
+	border-radius:12px;
+	float:left; /* Si no pongo float left el div "lateral" se queda abajo de "centro" */
     left:10%;
 
 }
@@ -29,18 +30,7 @@
 	
 	width:600px;;
 }
- 
-.botonera{
 
-    width:600px;
-    background-color: coral;
-    border-radius:7px;
-    position:absolute;
-    left:13%;
-    top:370px;
-	
-
-}
 
 .foPub{
 	
@@ -63,6 +53,26 @@
 	top:20px;
 	border-radius:5px;
 	
+}
+
+ .grupo_botones{
+
+	position:relative;	
+	width:590px;
+	left:5px;
+    /* top:10px; */  
+} 
+
+.botonera{
+
+    width:600px;
+    background-color: coral;
+    border-radius:7px;
+    position:absolute;
+    left:13%;
+    top:370px;
+	
+
 }
 
 #equis{
@@ -90,6 +100,12 @@
 #chinpo{
 	
 	z-index:1;
+}
+
+button img{
+
+	width:25px;
+
 }
 
 
@@ -125,23 +141,25 @@
 
 }
 
-#cuenta{
-	
+
+#lateral{
 
 	
-	
-}
-
-.lateral{
-
-	position:relative;
 	width:400px;
 	height:900px;
     background-color: antiquewhite;
     border: solid lightgrey 2px;
     border-radius:12px;	
-	left:850px;
-	top:-9px;
+	/* left:1150px; */
+	float:right;
+	left:1100px;
 	
 	
+}
+
+#lateral .proyectorL{
+
+	position:absolute;
+	left:calc(100%-150px);
+
 }

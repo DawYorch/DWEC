@@ -16,13 +16,29 @@ function cargar() {
 	document.getElementById("mas").addEventListener("click", masVol, false);
 	document.getElementById("proyector").addEventListener("timeupdate",progresoBarra, false);
 	document.getElementById("equis").addEventListener("click",acceso, false);
-	
+
+	var videos = document.getElementsByClassName("videos");
+	for (var i = 0;i < videos.length;i++) {
+		videos[i].addEventListener("click",mostrar);
+	}
 }
+
+function mostrar() {
+	document.getElementById("proyector").src = this.id;
+	document.getElementById("pub").style.display = "block";
+
+	C_Atras();
+}
+
+
 
 var count=4;
 
+
+
 function C_Atras(){
 	
+
 	var number=document.getElementById("cuenta");
 	var intervalo=setInterval(function(){
 		
@@ -31,8 +47,9 @@ function C_Atras(){
 		if(count==0){
 			
 			clearInterval(intervalo);
-			number.innerHTML = ""
-;			document.getElementById("equis").style.display = "block";
+			number.innerHTML = "";
+			document.getElementById("equis").style.display = "block";
+			count=4;
 		}
 		
 	}, 1000);

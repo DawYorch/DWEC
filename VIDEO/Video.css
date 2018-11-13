@@ -141,25 +141,46 @@ button img{
 
 }
 
+video{
+
+	width:600px;
+}
+
+#proyector2{
+
+	position:absolute;
+	left:calc(50% - 150px);	
+	top:20px;
+
+}
+
+#proyector3{
+
+	position:absolute;
+	left:calc(50% - 150px);	
+	top:260px;
+
+}
+
+#proyector4{
+
+	position:absolute;
+	left:calc(50% - 150px);	
+	top:500px;
+
+}
+
 
 #lateral{
-
 	
+	position: relative;	
 	width:400px;
 	height:900px;
     background-color: antiquewhite;
     border: solid lightgrey 2px;
     border-radius:12px;	
-	/* left:1150px; */
-	float:right;
-	left:1100px;
-	
+	left:1100px;	
 	
 }
 
-#lateral .proyectorL{
 
-	position:absolute;
-	left:calc(100%-150px);
-
-}

@@ -26,21 +26,21 @@ function cargar() {
 function mostrar() {
 	document.getElementById("proyector").src = this.id;
 	document.getElementById("pub").style.display = "block";
-
+	clearInterval(intervalo);
 	C_Atras();
 }
 
 
 
-var count=4;
 
+var intervalo;
 
 
 function C_Atras(){
 	
-
+	var count=14;
 	var number=document.getElementById("cuenta");
-	var intervalo=setInterval(function(){
+	intervalo=setInterval(function(){
 		
 		count--;
 		number.innerHTML = count;
@@ -49,7 +49,7 @@ function C_Atras(){
 			clearInterval(intervalo);
 			number.innerHTML = "";
 			document.getElementById("equis").style.display = "block";
-			count=4;
+
 		}
 		
 	}, 1000);

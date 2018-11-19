@@ -8,8 +8,7 @@
 function getFormvalue(){
 
     var x = document.getElementsByName("nombre");
-    alert(x.value);
-    
+    alert(x[0].value);
 
 }
 

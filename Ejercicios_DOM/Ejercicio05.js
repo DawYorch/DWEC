@@ -30,13 +30,13 @@ function potencia(){
 function resultado(dato){
 
     var renglon = document.createElement("p");
-    var salto = document.createElement("br");
+    /* var salto = document.createElement("br"); */
 
     divSol.appendChild(renglon);
     var texto = document.createTextNode(dato);
     
     renglon.appendChild(texto);
-   /*  divSol.appendChild(salto); */
+   /*  divSol.appendChild(salto); No hace falta salto xq conseguimos introducir un <p>*/
 
 
 }

@@ -30,7 +30,6 @@ function potencia(){
 function resultado(dato){
 
     var renglon = document.createElement("p");
-    /* var salto = document.createElement("br"); */
 
     divSol.appendChild(renglon);
     var texto = document.createTextNode(dato);

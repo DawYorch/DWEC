@@ -1,0 +1,50 @@
+#contenedor{
+    margin-left: 14%;
+    margin-top: 5%;
+    
+}
+#contenedor .contain{
+
+    display:inline-block;
+}
+
+#rojo{
+    background-color: red;
+    display:inline-block;
+    box-shadow: 5px 10px 10px #888888;
+    height: 300px;
+    width: 300px;
+}
+.rojoscuro{
+    background-color: purple;
+    display:inline-block;
+    box-shadow: 5px 10px 10px #888888;
+    height: 300px;
+    width: 300px;
+}
+#azul{
+    background-color: blue;
+    display:inline-block;
+    box-shadow: 5px 10px 10px #888888;
+    height: 300px;
+    width: 300px;
+}
+#verde{
+    background-color: green;
+    display:inline-block;
+    box-shadow: 5px 10px 10px #888888;
+    height: 300px;
+    width: 300px;
+}
+#negro{
+    background-color: black;
+    display:inline-block;
+    box-shadow: 5px 10px 10px #888888;
+    height: 300px;
+    width: 300px;
+}
+.botonako{
+    display:block;
+    text-align: center;
+    margin-left: 42%;
+}

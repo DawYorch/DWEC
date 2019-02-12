@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Primer script javascript</title>
+        <script type="text/javascript">
+        var cant = Number(prompt("Cuántos elementos tendrá el array?"));
+        var max = 0;
+        // var max2 = 0;
+        // var aux = 1;
+        var arr = new Array(cant);
+        for (let i = 0; i < arr.length; i++){     /* Cada vez que introducimos un número nuevo, hacemos la comprobación pertinente y lo guardamos como máximo si es el caso */
+          
+          let num = Number(prompt("Introduce un número: "));
+
+          if (num > max) arr[i] = max = num;
+          else arr[i] = num;
+
+          }
+        //   aux = max2 = 6;
+        //   document.write("aux valia 1 y ahora " + aux + max2);
+          document.write("El número más alto del array es " + max);
+        </script>
+    </head>
+
+    <body><!-- Código html -->
+    
+    </body>
+    
+</html>
+
+<!-- Entrada de datos -->
+
+

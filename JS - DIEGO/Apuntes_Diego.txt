@@ -1,0 +1,77 @@
+1.Introducción
+
+    *Entrada y salida de datos (prompt, alert, console.log, document.write)
+
+2. Javascript Sintaxis
+
+    *Comentarios
+    *Tipo de datos ( Boolean, null, undefined, Number, String, Array, Symbol, Object)
+    *Declaraciones (var, let, const)
+    *Hoisting. Las variables en JavaScript se pueden referenciar antes de ser declaradas  sin obtener una excepción.
+    *Ámbito de las variables 
+            -Globales Cuando declaras una variable fuera de una función. En la raiz del documento o dentro de un bloque mediante var.
+            -De ámbito de bloque Dentro de un bloque mediante let.
+    *Operadores
+        Unario x++  O bien Operando+Operador ó Operador+Operando
+        Binario x + y Operando + Operador + Operando
+    *Operadores de asignación.
+    *Operadores de comparación.
+    *Operadores aritméticos.
+    *Operadores bit a bit.
+    *Operadores lógicos.
+    *Otros Operadores (typeof, instanceof, void, operador de agrupación())
+    *Declaración de arrays.
+    *Declaraciónde matrices.
+    *Funciones sobre arrays Push() pop() shift() unshift() indexOf() lastIndexOf() splice() slice() length() sort() reverse() concat() join()
+                            toString() map() filter() some() every()
+    *String Comportamiento como objeto o literal
+        Con eval() cambia si el string es objeto o literal EVAL()
+        Símbolo \n
+        Métodos de String
+    *Expresiones Regulares, métodos que las utilizan "La movida"
+    *Number
+        Binario / Octal / Hexadecimal
+        Propiedades del objeto Number
+        Métodos del objeto Number
+    *Math
+        Propiedades matemáticas
+        Métodos matemáticos
+    *Date
+    *If else
+    *Switch
+    *Tipos de false
+    *While
+    *do while
+    *for / for in / for of  Sacar de un array sus valores o sus índices
+    *forEach
+    *Control de flujo / break /continue
+    *Funciones / tipos primitivos / Ámbito de una función / Recursividad / Funciones anidadas / Clausuras / arguments[]
+    *Funciones predefinidas
+        eval / isFinite / isNaN / parseInt / parseFloat / Number / String
+    *Excepciones / try catch / finally
+3.POO
+4.MAP Y SET
+5 y 6 no existen.
+7.EVENTOS / Lista de Eventos 
+9.EVENTOS / Event Listeners / Objeto Event / Generar un evento sobre un elemento, dispatchEvent
+8.DOM 
+    *Estructura del DOM
+    *Tipos de Nodo
+    *Acceso directo a Nodos - getElementsByTagName() / getElementsByName() / getElementById() / getElementsByClassName() / document.querySelectorAll() / elemento.querySelector()
+    *Creación de Nodos - createElement() / createTextNode() / appendChild()
+    *Acceso directo a atributos - elemento.atributo  (href / className / ) elemento.classList.add() / elemento.classList.remove()  
+    *Acceso a style - elemento.style.atributo_de_style
+    *Eliminación de Nodos - parentNode() / removeChild()
+10.BOM
+    *Objeto Window - Tamaño y posición
+    *Control de Tiempos - setTimeOut() / clearTimeOut() / setInterval() / clearInterval()
+    *Objeto Screen - Contiene informacion sobre la pantalla
+    *Objeto Location - Guarda información sobre la URL
+    *Objeto Navigator - Incluye infotmacion sobre el navegador
+    *Objeto History - Contien información sobre el historial del navegador
+    *Objeto Geolocalización - Guarda información sobre la información relacionada con la geolocalización del dispositivo.
+11.MULTIMEDIA
+    *Elemento VIDEO
+    *Elemento AUDIO
+    *Métodos - AddTextTrack() / canPlayTime() / load() / play() / pause()
+    *Propiedades 

@@ -1,6 +1,78 @@
-import Cliente from "./Cliente";
-import Libro from "./Libro";
+class Libro{
 
+    constructor(Titulo, Autor, Pais, Isbn){
+        this.Titulo = Titulo;
+        this.Autor = Autor;
+        this.Pais = Pais;
+        this.Isbn = Isbn;
+    }
+
+
+        setTitulo(value){
+            this.Titulo = value;
+        }
+        setAutor(value){
+            this.Autor = value;
+        }
+        setPais(value){
+            this.Pais = value;
+        }
+        setIsbn(value){
+            this.Isbn = value;
+        }
+
+        getTitulo(){
+            return this.Titulo;
+        }
+        getAutor(){
+            return this.Autor;
+        }
+        getPais(){
+            return this.Pais;
+        }
+        getIsbn(){
+            return this.Isbn;
+        }
+
+}
+
+class Cliente{
+
+    constructor(Nombre, Direccion,Dni,Telefono){
+        this.Nombre = Nombre;
+        this.Direccion = Direccion;
+        this.Dni = Dni;
+        this.Telefono = Telefono;
+    }
+
+
+        setNombre(value){
+            this.Nombre = value;
+        }
+        setDireccion(value){
+            this.Direccion = value;
+        }
+        setDni(value){
+            this.Dni = value;
+        }
+        setTelefono(value){
+            this.Telefono = value;
+        }
+
+        getNombre(){
+            return this.Nombre;
+        }
+        getDireccion(){
+            return this.Direccion;
+        }
+        getDni(){
+            return this.Dni;
+        }
+        getTelefono(){
+            return this.Telefono;
+        }
+
+}
 
 var nombre;
 var direccion;
@@ -18,9 +90,7 @@ function cargar(){
 
     document.getElementById("botonCliente").addEventListener("click", crearCli);
     document.getElementById("botonLibro").addEventListener("click", crearLib);
-    document.getElementById("mostrarDatos").addEventListener("click", mostrar);
-
-    
+    document.getElementById("mostrarDatos").addEventListener("click", mostrar);    
 }
 
 function crearCli(){
@@ -42,11 +112,7 @@ function crearLib(){
 
 }
 function mostrar(){
-    document.getElementById("mostrar").innerHTML=Usuario.nombre+"<br>"+Usuario.direccion;
+    document.getElementById("mostrar").innerHTML=Usuario.getNombre()+"<br>"+Usuario.getDireccion();
 }
-
-
-
-
 
 window.addEventListener("load", cargar);

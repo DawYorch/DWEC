@@ -1,0 +1,30 @@
+.form-inline {
+    margin: 1%;
+}
+
+label {
+    margin-left: 1%;
+}
+
+.delete {
+    margin-left: 1%;
+    background: #F78181;
+}
+
+.new {
+    margin-left: 1%;
+    background: #D0F5A9;
+}
+
+#nuevo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: black;
+    background-color: #D8D8D8;
+}

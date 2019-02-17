@@ -1,0 +1,50 @@
+pre{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    height: inherit;
+    width: inherit;
+}
+
+#contenedor{
+    background-color: cadetblue;
+    height: 800px;
+    width: 800px;
+    position:absolute;
+    /* Los putos espacios hacen que no vaya si no estan, aqui en la siguiente linea de abajo */
+    left: calc(50% - 400px); 
+}
+.dni{
+    background-color: pink;
+}
+.nombre{
+    background-color: rgb(172, 144, 197);
+}
+.apellidos{
+    background-color: rgb(214, 151, 129);
+}
+
+#otro{
+    position:absolute;
+    top:20px;
+    left: 720px;
+}
+.grupo{
+    width: 700px;
+}
+
+.grupo div{
+    display:inline-block;
+}
+
+.grupo div input{
+    display:block;
+}
+
+/* Este siguiente no hace falta pero me quedo mas tranquilo */
+/* .grupo input{
+    display:inline-block;
+}
+label{
+    display:block;
+} */

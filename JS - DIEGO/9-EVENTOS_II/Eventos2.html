@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="Eventos2.js"></script>
+    
+</head>
+<body>
+
+    <pre>        Realizar una web en la que tengamos una estructura como la que vemos en la imagen.
+
+        ●Al hacer click en el círculo con el +, se generará una nueva línea con las mismas características que las demás, tantas como clicks.
+        ●Las celdas no son editables hasta que pulsemos en el botón del lápiz. Cuando estemos editándolas, el botón del lápiz estará desactivado.
+        ●Si pulsamos al botón con la x, después de mostrarnos un mensaje en el que nos diga “Estás seguro de que quieres eliminar al usuario nombre apellidos con DNI dni”, eliminará la línea.
+        ●El botón de eliminar, no se activará hasta que haya contenido en las 3 cajas de texto.●Versión móvil.</pre>
+
+
+    <div id="contenedor">
+
+        <div class="grupo">
+
+                <div class="documento">   
+                    <label>DNI</label>
+                    <input type="text" class="dni" disabled>
+                </div> 
+                <div class="nick"> 
+                    <label>NOMBRE</label>
+                    <input type="text" class="nombre" disabled>
+                </div>
+                <div class="surname"> 
+                    <label>APELLIDOS</label>
+                    <input type="text" class="apellidos" disabled>
+                </div>
+                <input type="button" class="destruccion"  value="Eliminar">
+                <input type="button" class="escribir" value="Escribir">
+
+        </div>
+
+        <input type="button" id="otro" value="otro">
+
+
+    </div>
+    
+</body>
+</html>

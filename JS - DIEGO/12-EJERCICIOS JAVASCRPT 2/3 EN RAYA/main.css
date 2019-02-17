@@ -1,0 +1,67 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+div#tablero {
+    width: 310px;
+    height: 310px;
+    padding: 0px;
+    border: 7px solid #999;
+    background-color: white;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+div#tablero div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0px;
+    font-size: 90px;
+    font-family: arial;
+    text-align: center;
+}
+
+#celda0, #celda1, #celda2, #celda3, #celda4, #celda5 {
+    border-bottom: 5px solid black;
+}
+
+#celda0, #celda1, #celda3, #celda4, #celda6, #celda7 {
+    border-right: 5px solid black;
+}
+
+div#tablero>div:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d; 
+}
+.center {
+    margin-left: 47%;
+    padding: 10px;
+}

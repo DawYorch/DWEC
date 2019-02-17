@@ -1,0 +1,27 @@
+p{
+    background-color: blue;
+    color:white;
+    width:500px;
+    text-align:center;
+}
+
+#izq{
+    height: 100px;
+    width:300px;
+    position:absolute;
+    top:180px;
+    left:30px;
+    background-color: brown;
+    color:white;
+    text-align:center;
+}
+#der{
+    height: 100px;
+    width:300px;
+    position:absolute;
+    top:180px;
+    left:1500px;
+    background-color: green;
+    color:white;
+    text-align:center;
+}

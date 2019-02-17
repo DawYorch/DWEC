@@ -1,0 +1,58 @@
+<html>
+
+        <head>
+        <title>pruebas</title>
+
+                <script>
+
+//DIV contenedor del DIV movible DRAGOVER ES QUE TIENE SALIDA
+                        function cargar() {
+                        document.getElementById("div1").addEventListener("dragover", allowDrop);  //DIV receptor del DIV movible
+                        document.getElementById("div2").addEventListener("dragover", allowDrop); //DIV receptor del DIV movible
+                        document.getElementById("drag1").addEventListener("dragstart", drag);  //DIV que se dejamover
+                        document.getElementById("div2").addEventListener("drop",drop);  //DIV contenedor del DIV mobible DROP es que lo acepta como destino
+                        document.getElementById("div1").addEventListener("drop",drop);  //DIV receptor del DIV mobible DROP es que lo acepta como destino
+                        }
+                                                        //Si al DIV1 quitamos el drop no se queda colgado, nos lleva a una web JAJAJA
+                        function allowDrop(ev) {
+                                // alert("allowDrop");
+                                //Permitir que reciba algún elemento
+                                ev.preventDefault();
+                        }
+
+                        function drag(ev) {
+                                //Indicamos que valor y tipo de información vamos a arrastrar. En este caso texto e ID del elemento.
+                                ev.dataTransfer.setData("text", ev.target.id);
+                        }
+
+                        function drop(ev) {
+                                //Evitamos el comportamiento normal del navegador, que sería abrir el elemento en una nueva pestaña.
+                                ev.preventDefault();
+
+                                //Guardamos el elemento, llamado "text" en una variable.
+                                var data = ev.dataTransfer.getData("text");
+
+                                //Colgamos el elemeto arrastrado y soltado en el nuevo destino.
+                                ev.target.appendChild(document.getElementById(data));
+                        }
+
+                        window.addEventListener("load",cargar);
+
+                </script>
+
+        </head>
+
+    <body>
+        
+        <div id="div1" style="border:1px solid black;width:300px;float:left;height:500px">
+
+                <div draggable="true" id="drag1" style="width:100%;height:50px;border:1px solid red">pruebas</div>
+                <!-- Si ponemos draggable="true" al padre no va, pero en los futbolistas si  ???? -->
+        </div>
+
+        <div id="div2" style="border:1px solid black;width:300px;float:right;height:500px">
+        </div>
+
+    </body>
+
+</html>

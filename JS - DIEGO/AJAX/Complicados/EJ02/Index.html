@@ -1,0 +1,70 @@
+<!--La página HTML proporcionada incluye una zona llamada ticker en la que se deben mostrar noticias-->
+<!--generadas por el servidor. Añadir el código JavaScript necesario para:-->
+
+<!--•De forma periódica cada cierto tiempo (por ejemplo cada segundo) se realiza una petición al servidor-->
+<!--mediante AJAX y se muestra el contenido de la respuesta en la zona reservada para las noticias. -->
+<!--•Además del contenido enviado por el servidor, se debe mostrar la hora en la que se ha recibido la-->
+<!--respuesta. -->
+<!--•Cuando se pulse el botón "Detener", la aplicación detiene las peticiones periódicas al servidor. Si se-->
+<!--vuelve a pulsar sobre ese botón, se reanudan las peticiones periódicas. -->
+<!--•Añadir la lógica de los botones "Anterior" y "Siguiente", que detienen las peticiones al servidor y-->
+<!--permiten mostrar los contenidos anteriores o posteriores al que se muestra en ese momento. -->
+<!--•Cuando se recibe una respuesta del servidor, se resalta visualmente la zona llamada ticker. -->
+<!--•Modificar la aplicación para que se reutilice continuamente el mismo objeto -->
+<!--XMLHttpRequest-->
+<!--para hacer las diferentes peticiones. -->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio 2 - Actualizacion periodica de contenidos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+  <div id="ticker"></div>
+
+  <div id="acciones">
+    <input type="button" id="detener" value="Detener"/>
+    <input type="button" id="anterior" value="&laquo; Anterior" />
+    <input type="button" id="siguiente" value="Siguiente &raquo;" />
+  </div>
+
+  <div id="contenidos">
+    <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
+    <p>
+      Proin tristique condimentum sem. Fusce lorem sem, laoreet nec, laoreet et, venenatis nec, ligula.
+Nunc dictum sodales lorem. Fusce turpis. Nullam semper, ipsum ut ultrices mattis, nulla magna luctus 
+purus, sit amet vehicula magna magna vel velit.
+    </p>
+
+    <h2>Morbi a lacus. Proin pharetra nisi id est.</h2>
+
+    <p>
+      Maecenas mollis suscipit sapien. Pellentesque blandit dui eu mauris. Etiam elit urna, iaculis non,
+dignissim in, fermentum nec, ipsum. Nulla commodo aliquam lectus. Sed vulputate diam ac sapien accumsan
+consequat. Aliquam id urna sed dolor tincidunt tempor.
+    </p>
+
+    <h2>Quisque consequat. Nullam vel justo.</h2>
+
+    <p>
+      Cras sit amet elit a mauris ultricies viverra. Phasellus placerat quam et magna. Nunc sed tellus. 
+Pellentesque hendrerit pellentesque nunc. Aenean turpis. Sed justo tellus, mollis at, euismod at,  
+pellentesque eu, tellus. Nam vulputate. Nunc porttitor sapien tristique velit. Vestibulum tempus, 
+quam non dapibus pellentesque, sem nulla sagittis ligula, et volutpat turpis felis vitae nunc.
+    </p>
+
+    <p>
+      Ut eros magna, congue in, sodales ac, facilisis ac, dolor. Aenean faucibus pellentesque est. Proin
+cursus. Vivamus mollis enim in magna. Donec urna risus, convallis eget, aliquet non, auctor sit amet, leo.
+Duis tellus purus, pharetra in, cursus sed, posuere semper, lorem. Fusce eget velit nec felis tempus
+gravida. Donec et augue vitae nulla posuere hendrerit. Nulla vehicula scelerisque massa. Phasellus eget
+lorem id quam molestie ultrices. Integer ac ligula sit amet lectus condimentum euismod. Sed malesuada 
+orci eu neque.
+    </p>
+  </div>
+</body>
+</html>

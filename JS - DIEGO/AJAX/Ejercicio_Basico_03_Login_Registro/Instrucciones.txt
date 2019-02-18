@@ -1,0 +1,65 @@
+1.- Desde la línea de comandosde C9.io, arrancar la base de datos mysql:
+    sudo service mysql start
+    (añádalo a .bashrc con ayuda de nano)
+
+2.- Cambiar el usuario root para tener contraseña root:
+    mysqladmin -u root password root //ESTO NO VA, PASAR A SIGUIENTE
+
+3.- Comprobar que se puede acceder a mysql:
+    mysql -u root -p
+    introduciendo como contraseña root.
+
+4.- Crear una base de datos de prueba:
+    create database bdprueba;
+
+5.-
+    grant all privileges on bdprueba.* to miusuario@localhost identified by "mipassword";
+    flush privileges;
+    exit
+
+
+/************************  REENTRAR (sino funciona repite paso 1)   *****************************************/
+
+6.-
+    mysql -u miusuario -p
+    (conéctese con contraseña mipassword)
+
+7.- 
+    use bdprueba;
+    create table clientes (ID int, nombre varchar(40));
+    insert into clientes values (1, 'Pepe');
+    insert into clientes values (2, 'Antonio');
+    insert into clientes values (3, 'Lucas');
+
+
+
+/***********     INICIAR  DETENER       *********************/
+* INICIAR BASE de DATOS (SQL):
+    
+        sudo service mysql start
+    
+        mysql -u miusuario -p
+        
+        mipassword
+    
+    
+*. Detener la base de datos con:
+    sudo service mysql stop
+
+/*******************************    Expresiones Comunes     ***************************************/
+
+Mostrar BBDD existentes / Usar BBDD
+    show databases;
+    use  nombreTabla;
+
+Mostrar TABLAS existentes:
+    show tables;
+    
+Mostrar la estructura de una tabla:
+    describe nombreTabla;
+
+Crear TABLA:
+    create table nombreTabla (nombreCampo int, nombreCampo2 varchar(40));  
+
+Borrar Campos:
+    delete from tabla9 where ID>0;

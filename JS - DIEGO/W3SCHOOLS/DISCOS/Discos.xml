@@ -1,0 +1,37 @@
+<CATALOG>
+    <CD>
+        <TITLE>Empire Burlesque</TITLE>
+        <ARTIST>Bob Dylan</ARTIST>
+        <COUNTRY>USA</COUNTRY>
+        <COMPANY>Columbia</COMPANY>
+        <PRICE>10.90</PRICE>
+        <YEAR>1985</YEAR>
+    </CD>
+
+    <CD>
+        <TITLE>Hide your heart</TITLE>
+        <ARTIST>Bonnie Tyler</ARTIST>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>CBS Records</COMPANY>
+        <PRICE>9.90</PRICE>
+        <YEAR>1988</YEAR>
+    </CD>    
+
+    <CD>
+        <TITLE>Yepa tu</TITLE>
+        <ARTIST>Bob Marley</ARTIST>
+        <COUNTRY>ESPAIN</COUNTRY>
+        <COMPANY>No Records</COMPANY>
+        <PRICE>10.90</PRICE>
+        <YEAR>1885</YEAR>
+    </CD>
+    
+    <CD>
+        <TITLE>Casio</TITLE>
+        <ARTIST>Tyler</ARTIST>
+        <COUNTRY>UK</COUNTRY>
+        <COMPANY>CBS</COMPANY>
+        <PRICE>29.90</PRICE>
+        <YEAR>1998</YEAR>
+    </CD>
+</CATALOG>    
